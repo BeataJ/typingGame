@@ -42,7 +42,10 @@ let score = 0;
 let time = 10;
 
 // Init difficulty
-let difficulty = 'Medium';
+let difficulty =
+  localStorage.getItem('difficulty') !== null
+    ? localStorage.getItem('difficulty')
+    : 'medium';
 
 // Focuse on text on start
 text.focus();
