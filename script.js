@@ -47,6 +47,12 @@ let difficulty =
     ? localStorage.getItem('difficulty')
     : 'medium';
 
+// set difficulty  select value
+difficultySelect.value =
+  localStorage.getItem('difficulty') !== null
+    ? localStorage.getItem('difficulty')
+    : 'medium';
+
 // Focuse on text on start
 text.focus();
 
