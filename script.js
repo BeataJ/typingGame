@@ -3,7 +3,7 @@ const text = document.getElementById('text');
 const scoreEl = document.getElementById('score');
 const timeEl = document.getElementById('time');
 const endgameEl = document.getElementById('end-game-container');
-const settingBtn = document.getElementById('settings-btn');
+const settingsBtn = document.getElementById('settings-btn');
 const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
 const difficultySelect = document.getElementById('difficulty');
@@ -91,6 +91,7 @@ addWordToDOM();
 
 // Event Listener
 
+// Typing
 text.addEventListener('input', (e) => {
   const insertedText = e.target.value;
 
@@ -105,4 +106,9 @@ text.addEventListener('input', (e) => {
 
     updateTime();
   }
+});
+
+// Settings btn click
+settingsBtn.addEventListener('click', () => {
+  settings.classList.toggle('hide');
 });
