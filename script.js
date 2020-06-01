@@ -40,3 +40,7 @@ let score = 0;
 
 // Init time
 let time = 10;
+
+const getRandomWord = () => {
+  return words[Math.floor(Math.random() * words.length)];
+};
