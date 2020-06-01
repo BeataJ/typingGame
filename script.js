@@ -52,6 +52,12 @@ const addWordToDOM = () => {
   word.innerHTML = randomWord;
 };
 
+// Update score
+const updateScore = () => {
+  score++;
+  scoreEl.innerHTML = score;
+};
+
 addWordToDOM();
 
 // Event Listener
